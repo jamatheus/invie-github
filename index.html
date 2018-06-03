@@ -12,12 +12,25 @@
 			max-width: 100%;
 			vertical-align: top;
 		}
+		img#responsive{
+			display: none;
+		}
+		@media screen and (max-width: 768px)
+		{
+			img#responsive{
+				display: block;
+			}
+			img.desktop{
+				display: none;
+			}
+		}
 	</style>
 </head>
 <body>
-	<img src="imagen4.jpg">
-	<img src="imagen5.jpg">
-	<img src="imagen3.jpg">
-	<img src="imagen2.jpg">
+	<img src="invie-responsive.png" id="responsive">
+	<img src="imagen4.jpg" class="desktop">
+	<img src="imagen5.jpg" class="desktop">
+	<img src="imagen3.jpg" class="desktop">
+	<img src="imagen2.jpg" class="desktop">
 </body>
 </html>
